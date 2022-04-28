@@ -1,6 +1,6 @@
 @extends("base.base")
 
-@section('titulo', 'Jugadores de fútbol') 
+@section('titulo', 'Jugadores de fútbol')
 @section('navegacion')
     <ol>
         <li><a href="./">Inicio</a></li>
