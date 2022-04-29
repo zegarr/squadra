@@ -2,15 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
-use App\Models\Players;
+use App\Models\Player;
 
 Route::get('/', function () {
     return view('home');
 })->name("home");
 
 Route::get('/jugadores/{lang?}', function ($lang = 'es') {
-    App::setLocale("$lang");
-    $jugadores = Players::all();
+    App::setLocale($lang);
+    $jugadores = Player::all();
     return view('jugadores', ['jugadores' => $jugadores]);
 })->name("jugadores");
 

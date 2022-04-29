@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string("nombre")->nullable();
             $table->string("apellido")->nullable();
             $table->date("nacimiento")->nullable();
-            $table->string("posicion")->nullable();
+            $table->integer("posicion")->nullable();
             $table->integer("nroCamiseta")->nullable();
             $table->integer("piernaHabil")->nullable();
             $table->string("clubActual")->nullable();
