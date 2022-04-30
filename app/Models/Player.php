@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -23,4 +24,17 @@ class Player extends Model
         3 => "Defensa",
         4 => "Arquero"
     ];
+
+    public function obtenerFechaNacimiento()
+    {
+        return Carbon::create($this->nacimiento)->format("d/m/Y");
+    }
+    public function obtenerNombrePosicion()
+    {
+        return Player::Posiciones_Nombres[$this->posicion];
+    }
+    public function obtenerNombreCompleto()
+    {
+        return $this->nombre . ' ' . $this->apellido;
+    }
 }
