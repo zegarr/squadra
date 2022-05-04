@@ -24,6 +24,6 @@ Route::get('/jugadores/{lang?}', function ($lang = 'es') {
     ]);
 })->name("jugadores");
 
-Route::get('/jugadorFutbol/{nombre}', function () {
-    return view('jugador', ["jugador"]);
-})->name("jugador");
+Route::get('/jugadorFutbol', function () {
+    return view('jugadorFutbol');
+})->name("jugadorFutbol");
