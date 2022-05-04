@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #ef6603;
+  color: #fd9042;
   text-decoration: none;
 }
 
@@ -880,7 +880,7 @@ section {
   margin: 30px 15px;
   text-align: center;
   min-height: 350px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 5px 31px rgb(0 0 0 / 27%);
 }
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
@@ -1292,7 +1292,7 @@ section {
 .breadcrumbs {
   padding: 15px 0;
   margin-top: 70px;
-  background: #353643;
+  background: linear-gradient(90deg, transparent, #353643);
   min-height: 40px;
 }
 .breadcrumbs h2 {
@@ -1432,7 +1432,7 @@ section {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #ef6603;
+  color: #fd9042;
   line-height: 0;
 }
 .about-me .content p:last-child {
@@ -1505,5 +1505,5 @@ section {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #ef6603;
 }
