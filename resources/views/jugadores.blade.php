@@ -1,6 +1,6 @@
 @extends("base.base")
 
-@section('titulo', 'Jugadores de fútbol')
+@section('titulo', '')
 @section('navegacion')
 <ol>
     <li><a href="./">Inicio</a></li>
@@ -9,9 +9,9 @@
 @endsection
 @section('contenido')
 <main id="main">
-    <section id="portfolio-details" class="portfolio-details">
+    <section id="team" class="team">
         <div class="container">
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-12">
                     <h2>Management Deportivo</h2>
                     <p>Nuestro negocio se basa en la representación de jugadores de fútbol, tanto profesionales como
@@ -29,37 +29,190 @@
                         económicos.<br>
                     </p>
                 </div>
-                <div class="row gy-4">
-                    <div class="col-sm-12">
-                        <h1>Delanteros</h1>
-                    </div>
-                    @foreach ($delanteros as $delantero)
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img class="img-fluid"
-                                    src="https://www.squadramd.com/wp-content/uploads/2014/03/ALAN-PERFIL-302x362.jpg">
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="portfolio-info">
-                                    <h3>{{ $delantero->obtenerNombreCompleto() }}</h3>
-                                    <ul>
-                                        <li><strong>Posicion</strong>: {{ $delantero->obtenerNombrePosicion() }}</li>
-                                        <li><strong>Nacimiento</strong>: {{ $delantero->obtenerFechaNacimiento() }}</li>
-                                        <li><strong>Club Actual</strong>: {{ $delantero->clubActual }}</li>
-                                        <li><strong>Numero Camiseta</strong>: {{ $delantero->nroCamiseta }}</li>
-                                        <li><strong>Transfer Market</strong>: <a
-                                                href="{{ $delantero->transferMarketLink }}" target="_blank">{{
-                                                $delantero->obtenerNombreCompleto() }}</a></li>
-                                    </ul>
-                                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="section-title mb-3">
+                    <h2 style="font-size: 25px;line-height: 20px;">ATACANTES</h2>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+                    <div class="member" data-aos="fade-up">
+                        <div class="member-img">
+                            <img src="assets/img/players/terans.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                                <p>
+                                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry of
+                                        the printing and typesetting industry.</span>
+                                </p>
+                                <br>
+                                <p>Posicion: <span>Delantero</span></p>
+                                <p>Edad: <span>27</span></p>
+                                <p>Club Actual: <span>Atlético Paranaense</span></p>
                             </div>
                         </div>
+                        <a href="./jugadorFutbol" style="color:#fff;">
+                            <div class="member-info">
+                                <h4>David Terans</h4>
+                                <h6>#80</h6>
+                            </div>
+                        </a>
                     </div>
-                    @endforeach
                 </div>
-            </div>
-    </section><!-- End Portfolio Details Section -->
 
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+                    <div class="member" data-aos="fade-up">
+                        <div class="member-img">
+                            <img src="assets/img/players/terans.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                                <p>
+                                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry of
+                                        the printing and typesetting industry.</span>
+                                </p>
+                                <br>
+                                <p>Posicion: <span>Delantero</span></p>
+                                <p>Edad: <span>27</span></p>
+                                <p>Club Actual: <span>Atlético Paranaense</span></p>
+                            </div>
+                        </div>
+                        <a href="./jugadorFutbol" style="color:#fff;">
+                            <div class="member-info">
+                                <h4>David Terans</h4>
+                                <h6>#80</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+                    <div class="member" data-aos="fade-up">
+                        <div class="member-img">
+                            <img src="assets/img/players/terans.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                                <p>
+                                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry of
+                                        the printing and typesetting industry.</span>
+                                </p>
+                                <br>
+                                <p>Posicion: <span>Delantero</span></p>
+                                <p>Edad: <span>27</span></p>
+                                <p>Club Actual: <span>Atlético Paranaense</span></p>
+                            </div>
+                        </div>
+                        <a href="./jugadorFutbol" style="color:#fff;">
+                            <div class="member-info">
+                                <h4>David Terans</h4>
+                                <h6>#80</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+                    <div class="member" data-aos="fade-up">
+                        <div class="member-img">
+                            <img src="assets/img/players/terans.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                                <p>
+                                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry of
+                                        the printing and typesetting industry.</span>
+                                </p>
+                                <br>
+                                <p>Posicion: <span>Delantero</span></p>
+                                <p>Edad: <span>27</span></p>
+                                <p>Club Actual: <span>Atlético Paranaense</span></p>
+                            </div>
+                        </div>
+                        <a href="./jugadorFutbol" style="color:#fff;">
+                            <div class="member-info">
+                                <h4>David Terans</h4>
+                                <h6>#80</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mb-3">
+
+                <div class="section-title mb-3">
+                    <h2 style="font-size: 25px;line-height: 20px;">MEDIOCAMPISTAS</h2>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center" style="z-index: 2;">
+                    <a href="./jugadorFutbol" style="color:#fff;">
+                        <div class="member2" data-aos="fade-up" style="z-index: 0;">
+                            <div class="content2">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                    printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <h2>
+                                    <div style="display:flex;gap: 60px;">
+                                        <p><span>Posicion:<br></span>Delantero</p>
+                                        <p><span>Edad:<br></span>27</p>
+                                    </div>
+                                    <p><span>Club Actual:<br></span>Atlético Paranaense</p>
+                                </h2>
+                            </div>
+                            <div class="member-img">
+                                <img src="assets/img/players/terans.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="member-info">
+                                <h4>David Terans</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center" style="z-index: 1;">
+                    <div class="member2" data-aos="fade-up" style="z-index: 0;">
+                        <div class="content2">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <h2>
+                                <div style="display:flex;gap: 60px;">
+                                    <p><span>Posicion:<br></span>Delantero</p>
+                                    <p><span>Edad:<br></span>27</p>
+                                </div>
+                                <p><span>Club Actual:<br></span>Atlético Paranaense</p>
+                            </h2>
+                        </div>
+                        <div class="member-img">
+                            <img src="assets/img/players/terans.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="member-info">
+                            <h4>David Terans</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center" style="z-index: 0;">
+                    <div class="member2" data-aos="fade-up" style="z-index: 0;">
+                        <div class="content2">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s.</p>
+                            <h2>
+                                <div style="display:flex;gap: 60px;">
+                                    <p><span>Posicion:<br></span>Delantero</p>
+                                    <p><span>Edad:<br></span>27</p>
+                                </div>
+                                <p><span>Club Actual:<br></span>Atlético Paranaense</p>
+                            </h2>
+                        </div>
+                        <div class="member-img">
+                            <img src="assets/img/players/terans.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="member-info">
+                            <h4>David Terans</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section><!-- End Team Section -->
 </main><!-- End #main -->
 @endsection

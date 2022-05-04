@@ -69,7 +69,7 @@
     <div class="testimonials container">
 
       <div class="section-title">
-        <h2>Galeria</h2>
+        <h2 style="font-size: 25px;">Galeria</h2>
       </div>
 
       <div class="testimonials-slider swiper">

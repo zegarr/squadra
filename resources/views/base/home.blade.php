@@ -39,7 +39,7 @@
           <li class="dropdown"><a href="javascript:void(0)"><span>Management Deportivo</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ route("jugadores") }}">Jugadores de Fútbol</a></li>
-              <li><a href="#">Equipo Técnico</a></li>
+              <li><a href="{{ route("directoresTecnicos") }}">Equipo Técnico</a></li>
             </ul>
           </li>
           <li><a href="#services">Servicios</a></li>

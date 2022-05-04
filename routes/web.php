@@ -10,7 +10,7 @@ Route::get('/', function () {
 
 Route::get('/jugadores/{lang?}', function ($lang = 'es') {
     App::setLocale($lang);
-    
+
     $delanteros = Player::all()->where("posicion", Player::Posicion_Delantero);
     $mediocampistas = Player::all()->where("posicion", Player::Posicion_Mediocampista);
     $defensas = Player::all()->where("posicion", Player::Posicion_Defensa);
@@ -27,3 +27,7 @@ Route::get('/jugadores/{lang?}', function ($lang = 'es') {
 Route::get('/jugadorFutbol', function () {
     return view('jugadorFutbol');
 })->name("jugadorFutbol");
+
+Route::get('/directoresTecnicos', function () {
+    return view('directoresTecnicos');
+})->name("directoresTecnicos");
