@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Selecao Bootstrap Template - Index</title>
+  <title>Squadra</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,7 +28,7 @@
 </head>
 <body style="background-color: #272936; color: #fff;">
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent titulos_sport" style="    background-color: #272936f0;outline: solid #ef660294 3px;">
     <div class="container d-flex align-items-center justify-content-between">
       <div class="logo">
         <h1><a href="./"><img style="max-height: 44px;" src="assets/img/logo1.png" alt=""></a></h1>
@@ -42,9 +42,10 @@
               <li><a href="{{ route("directoresTecnicos") }}">Equipo Técnico</a></li>
             </ul>
           </li>
-          <li><a href="#services">Servicios</a></li>
+          <li><a href="{{route("servicios")}}">Servicios</a></li>
           <li><a href="#portfolio">Noticias</a></li>
-          <li><a href="#pricing">Marketing Deportivo</a></li>
+          <li><a href="{{route("marketingDeportivo")}}">Marketing Deportivo</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -60,5 +61,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/home.js"></script>
 </body>
 </html>

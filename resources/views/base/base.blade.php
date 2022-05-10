@@ -30,7 +30,7 @@
 
 <body style="background-color: #272936; color: #fff;">
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <header id="header" class="fixed-top d-flex align-items-center  header-transparent titulos_sport">
         <div class="container d-flex align-items-center justify-content-between">
             <div class="logo">
                 <h1><a href="./"><img style="max-height: 44px;" src="assets/img/logo1.png" alt=""></a></h1>
@@ -38,16 +38,17 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a href="./">Inicio</a></li>
-                    <li class="dropdown"><a href="javascript:void(0)"><span>Management Deportivo</span> <i
-                                class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="javascript:void(0)"><span>Management Deportivo</span>
+                            <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="{{ route('jugadores') }}">Jugadores de Fútbol</a></li>
                             <li><a href="{{ route('directoresTecnicos') }}">Equipo Técnico</a></li>
                         </ul>
                     </li>
-                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="{{ route('servicios') }}">Servicios</a></li>
                     <li><a href="#portfolio">Noticias</a></li>
-                    <li><a href="#pricing">Marketing Deportivo</a></li>
+                    <li><a href="{{ route('marketingDeportivo') }}">Marketing Deportivo</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -57,8 +58,8 @@
     <section class="breadcrumbs">
         <div class="container">
 
-            <div class="d-flex justify-content-between align-items-center">
-                <h2>@yield("titulo")</h2>
+            <div class="d-flex justify-content-between align-items-center titulos_sport">
+                <h2 style="font-weight: 700;">@yield("titulo")</h2>
                 @yield('navegacion')
             </div>
         </div>
