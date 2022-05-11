@@ -28,7 +28,7 @@
 </head>
 <body style="background-color: #272936; color: #fff;">
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center  header-transparent titulos_sport" style="    background-color: #272936f0;outline: solid #ef660294 3px;">
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent titulos_sport" style="top:0px;position:absolute;background-color: #272936f0;outline: solid #ef660294 3px;">
     <div class="container d-flex align-items-center justify-content-between">
       <div class="logo">
         <h1><a href="./"><img style="max-height: 44px;" src="assets/img/logo1.png" alt=""></a></h1>
