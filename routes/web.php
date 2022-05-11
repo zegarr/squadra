@@ -41,3 +41,7 @@ Route::get('/servicios', function () {
 Route::get('/marketingDeportivo', function () {
     return view('marketingDeportivo');
 })->name("marketingDeportivo");
+
+Route::get('/nosotros', function () {
+    return view('nosotros');
+})->name("nosotros");

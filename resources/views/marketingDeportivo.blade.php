@@ -12,7 +12,7 @@
         <section id="marketing-dep" class="marketing-dep pt-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 mt-3 aos-init aos-animate" data-aos="fade-up">
+                    <div class="col-lg-12 col-md-12 mt-3" data-aos="fade-up">
                         <div class="icon-box row">
                             <div class="image-marketing-dep col-lg-4 col-sm-12"><img
                                     src="assets/img/md/Pretemporada-Colon.jpg" alt=""></div>
@@ -30,7 +30,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-12 mt-3 aos-init aos-animate" data-aos="fade-up">
+                    <div class="col-lg-12 col-md-12 mt-3 " data-aos="fade-up">
                         <div class="icon-box row">
                             <div class="image-marketing-dep col-lg-4 col-sm-12"><img src="./assets/img/md/sancor.jpg"
                                     alt="">
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-12 mt-3 aos-init aos-animate" data-aos="fade-up">
+                    <div class="col-lg-12 col-md-12 mt-3 " data-aos="fade-up">
                         <div class="icon-box row">
                             <div class="image-marketing-dep col-lg-4 col-sm-12"><img
                                     src="assets/img/md/Pretemporada-Colon.jpg" alt=""></div>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-12 mt-3 aos-init aos-animate" data-aos="fade-up">
+                    <div class="col-lg-12 col-md-12 mt-3 " data-aos="fade-up">
                         <div class="icon-box row">
                             <div class="image-marketing-dep col-lg-4 col-sm-12"><img src="./assets/img/md/sancor.jpg"
                                     alt="">

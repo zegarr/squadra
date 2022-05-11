@@ -5,6 +5,8 @@
 * License: https://bootstrapmade.com/license/
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Montserrat:wght@900&display=swap');
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -30,6 +32,10 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+}
+
+.tituloPrincipal{
+  font-family: "Montserrat";
 }
 
 /*--------------------------------------------------------------
@@ -783,6 +789,7 @@ section {
 
 .marketing-dep .icon-box:hover {
   box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
+  transform: translate(0px, -10px);
 }
 
 .marketing-dep .image-marketing-dep {
@@ -858,6 +865,7 @@ section {
   background: #ef6603;
   color: #fff;
   border-color: #ef6603;
+  transform: translate(0px, -10px);
 }
 
 .servicios .nav-link.active {
@@ -2060,4 +2068,96 @@ section {
 
 .titulos_sport {
   font-family: "Poppins", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# nosotros
+--------------------------------------------------------------*/
+.nosotros {
+  background: #272936;
+  padding: 60px 0;
+}
+
+.nosotros .member {
+  border-radius: 40px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: #353643;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.nosotros .member:hover {
+  transition: 0.3s;
+  transform: translate(0px, -10px);
+}
+
+.nosotros .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.nosotros .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nosotros .member .social a {
+  transition: color 0.3s;
+  margin: 0 3px;
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  background: #fc5725;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nosotros .member .social a:hover {
+  background: #ff7c54;
+}
+
+.nosotros .member .social i {
+  font-size: 18px;
+  line-height: 0;
+}
+
+.nosotros .member .member-info {
+  padding: 15px 15px;
+}
+
+.nosotros .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.nosotros .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.nosotros .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.nosotros .member:hover .social {
+  opacity: 1;
+  bottom: 15px;
 }

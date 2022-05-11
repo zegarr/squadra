@@ -1137,7 +1137,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(typed_js__WEBPACK_IMPORTED_MODULE_0__);
 
 new (typed_js__WEBPACK_IMPORTED_MODULE_0___default())('.tituloPrincipal', {
-  strings: ["POTENCIAR^500LA^500PASION^2000", "SQUADRA^2000", "<span style='font-size:106px;'>21</span>^500 AÑOS^500 DE^500 TRAYECTORIA^2000"],
+  strings: ["POTENCIAR^500LA^500PASION^2000", "SQUADRA^2000", "21^500 AÑOS^500 DE^500 TRAYECTORIA^2000"],
   typeSpeed: 60,
   loop: true,
   showCursor: false

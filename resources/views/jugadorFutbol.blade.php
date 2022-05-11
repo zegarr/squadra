@@ -19,8 +19,9 @@
                 <div class="section-title">
                     <h2>Perfil</h2>
                     <p>David Terans
-                      <a href="https://www.transfermarkt.es/david-terans/profil/spieler/261309" class="btn btn-orange"
-                            style="border-radius:45px;margin-top: 10px;" target="_blank"><i class="fa fa-share-alt"></i></a>
+                        <a href="https://www.transfermarkt.es/david-terans/profil/spieler/261309" class="btn btn-orange"
+                            style="border-radius:45px;padding: 4px 9px 0px 7px;margin: 0px 0px 4px 7px;" target="_blank"><i
+                                class="ri-share-fill"></i></a>
                     </p>
                 </div>
 
@@ -37,10 +38,12 @@
                     <div class="col-lg-1 col-md-2 col-2 pt-lg-0 pt-5"
                         style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
                         <img src="assets/img/escudos/paranaense.png" class="img-fluid mb-3" style="height: 66px;">
-                        <img src="assets/img/flags/uy_flag.png" class="img-fluid mb-3" style="border-radius: 15px;height: 40px;">
+                        <img src="assets/img/flags/uy_flag.png" class="img-fluid mb-3"
+                            style="border-radius: 15px;height: 40px;">
                         <a href="https://www.transfermarkt.es/david-terans/profil/spieler/261309" class="btn btn-orange"
                             style="border-radius:45px;margin-top: 10px;" target="_blank">
-                            <img style="width: 24px;padding-bottom: 5px;" class="img-fluid" src="./assets/img/tm-1.png"></a>
+                            <img style="width: 24px;padding-bottom: 5px;" class="img-fluid"
+                                src="./assets/img/tm-1.png"></a>
                     </div>
                     <div class="col-lg-7 col-md-12 col-sm-1 pt-lg-0 pt-5">
                         <iframe style="border-radius: 20px;" width="100%" height="300px"
@@ -56,26 +59,26 @@
                     </div>
                     <div class="col-12 col-md-4">
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Nacimiento:</strong> <span>11/08/1994</span>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Equipo Actual:</strong> <span>Atletico
+                                    Paranaense</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Nacionalidad:</strong> <span>Uruguayo</span>
                             </li>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>27</span></li>
                             <li><i class="bi bi-chevron-right"></i> <strong>Posición:</strong> <span>Delantero</span></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-4">
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Equipo Actual:</strong> <span>Atletico
-                                    Paranaense</span></li>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Estatura:</strong> <span>1.71m</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Nacimiento:</strong> <span>11/08/1994</span>
+
                             <li><i class="bi bi-chevron-right"></i> <strong>Peso:</strong> <span>63kg</span></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-4">
                         <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Estatura:</strong> <span>1.71m</span></li>
                             <li><i class="bi bi-chevron-right"></i> <strong>Pierna Hábil:</strong> <span>Izquierda</span>
                             </li>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Nacionalidad:</strong> <span>Uruguayo</span>
-                            </li>
+
                         </ul>
                     </div>
                 </div>

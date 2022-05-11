@@ -48,7 +48,7 @@
                     <li><a href="{{ route('servicios') }}">Servicios</a></li>
                     <li><a href="#portfolio">Noticias</a></li>
                     <li><a href="{{ route('marketingDeportivo') }}">Marketing Deportivo</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="{{ route('nosotros') }}">Nosotros</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
