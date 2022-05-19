@@ -30,7 +30,7 @@
 
 <body style="background-color: #272936; color: #fff;">
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center  header-transparent titulos_sport">
+    <header id="header" style="background-color: rgb(39 41 54);" class="fixed-top d-flex align-items-center  header-transparent titulos_sport">
         <div class="container d-flex align-items-center justify-content-between">
             <div class="logo">
                 <h1><a href="./"><img style="max-height: 44px;" src="{{ asset('assets/img/logo1.png') }}" alt=""></a>
@@ -88,7 +88,7 @@
     <footer id="footer">
         <div class="container">
             <img style="width: 150px;" src="./assets/img/sq_logo.png" alt="">
-            <p>Empresa de Management y Marketing deportivo con mas de 20 años de experiencia en el mercado.</p>
+            <p>{{__("texto_footer")}}</p>
             <div class="social-links">
                 <a href="https://twitter.com/squadramd" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="https://www.instagram.com/squadramd" class="instagram"><i
@@ -100,7 +100,7 @@
                         src="./assets/img/tm-1.png"></a>
             </div>
             <div class="credits">
-                Desarrolado por <a href="https://www.socialsports.uy/">Social Sports Mkt.</a>
+                {{__("Desarrolado por")}} <a href="https://www.socialsports.uy/">Social Sports Mkt.</a>
             </div>
         </div>
     </footer><!-- End Footer -->
