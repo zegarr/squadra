@@ -16,7 +16,7 @@
                             class="bx bxl-youtube"></i></a>
                     <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                     <a href="#"><img style="width: 24px;padding-bottom: 5px;" class="img-fluid"
-                            src="./assets/img/tm-1.png"></a>
+                            src="{{asset('assets/img/tm-1.png')}}"></a>
                 </div>
             </div>
         </div><!-- End Footer -->

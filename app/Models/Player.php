@@ -19,10 +19,10 @@ class Player extends Model
     const Posicion_Arquero = 4;
 
     const Posiciones_Nombres = [
-        1 => "Delantero",
-        2 => "Mediocampistas",
-        3 => "Defensa",
-        4 => "Arquero"
+        1 => "Arqueros",
+        2 => "Defensas",
+        3 => "Mediocampistas",
+        4 => "Delanteros"
     ];
 
     public function obtenerFechaNacimiento()

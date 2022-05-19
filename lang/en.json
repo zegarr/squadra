@@ -1,7 +1,33 @@
 {
-    "The :attribute must contain at least one letter.": "The :attribute must contain at least one letter.",
-    "The :attribute must contain at least one number.": "The :attribute must contain at least one number.",
-    "The :attribute must contain at least one symbol.": "The :attribute must contain at least one symbol.",
-    "The :attribute must contain at least one uppercase and one lowercase letter.": "The :attribute must contain at least one uppercase and one lowercase letter.",
-    "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "The given :attribute has appeared in a data leak. Please choose a different :attribute."
+    "Inglés":"English",
+    "Español":"Spanish",
+    "Idioma":"Language",
+
+    "Nosotros":"Us",
+    "Servicios":"Services",
+    "Inicio":"Home",
+    "Management Deportivo":"Sports Management",
+    "Jugadores de Fútbol":"Soccer Players",
+    "Equipo Técnico":"Coach Team",
+    "Noticias":"News",
+    "Jugadores":"Players",
+    "Marketing Deportivo":"Sports Marketing",
+
+    "Mediocampistas":"Midfielders",
+    "Arqueros":"Goalkeepers",
+    "Defensas":"Defenders",
+    "Delanteros":"Strikers",
+
+    "texto_jugadores_dt":"Our business is based on the representation of soccer players, both professional and amateur, and on advising national and foreign clubs, and other sports entities. For this reason, Squadra designed its company on three interrelated areas that cover all aspects of the business.",
+    "Asesoramiento integral para el Deportista":"Comprehensive Advice for the Athlete",
+    "Agente AFA" : "AFA Agent",
+    "Nutrición" : "Nutrition",
+    "Psicología" : "Psychology",
+    "Asesoramiento Financiero, Legal y Contable" : "Financial, Legal and Accounting Advice",
+    "Soporte de Redes Socuales & Comunicación y Marketing" : "Support of Social Networks and Communication and Marketing",
+    "Sponsors" : "Sponsors",
+    "Asistencia Logistica y Relocation Familiar" : "Logistics Assistance and Family Relocation",
+    "Intermediaciones" : "Intermediations",
+    "Scouting para Clubes" : "Scouting for Clubs"
+
 }

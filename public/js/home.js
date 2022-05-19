@@ -1136,8 +1136,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! typed.js */ "./node_modules/typed.js/lib/typed.js");
 /* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(typed_js__WEBPACK_IMPORTED_MODULE_0__);
 
+var url = window.location.href;
+var idioma = url.split('/').pop();
+var titulo = ["POTENCIAR^500LA^500PASION^2000", "SQUADRA^2000", "21^500 AÑOS^500 DE^500 TRAYECTORIA^2000"];
+
+if (idioma == "en") {
+  titulo = ["BOOST^500 PASSION^2000", "SQUADRA^2000", "21^500 YEARS^500 OF^500 EXPERIENCE^2000"];
+}
+
 new (typed_js__WEBPACK_IMPORTED_MODULE_0___default())('.tituloPrincipal', {
-  strings: ["POTENCIAR^500LA^500PASION^2000", "SQUADRA^2000", "21^500 AÑOS^500 DE^500 TRAYECTORIA^2000"],
+  strings: titulo,
   typeSpeed: 60,
   loop: true,
   showCursor: false
