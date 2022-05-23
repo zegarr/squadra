@@ -3,7 +3,7 @@
     "Español":"Spanish",
     "Idioma":"Language",
 
-    "Nosotros":"Us",
+    "Contacto":"Contact",
     "Servicios":"Services",
     "Inicio":"Home",
     "Management Deportivo":"Sports Management",
@@ -17,6 +17,11 @@
     "Arqueros":"Goalkeepers",
     "Defensas":"Defenders",
     "Delanteros":"Strikers",
+
+    "Mediocampista":"Midfielder",
+    "Arquero":"Goalkeeper",
+    "Defensa":"Defender",
+    "Delantero":"Striker",
 
     "texto_jugadores_dt":"Our business is based on the representation of soccer players, both professional and amateur, and on advising national and foreign clubs, and other sports entities. For this reason, Squadra designed its company on three interrelated areas that cover all aspects of the business.",
     "Asesoramiento integral para el Deportista":"Comprehensive Advice for the Athlete",
@@ -32,6 +37,8 @@
 
     "Directores Técnicos" : "Coaches",
     "Desarrolado por" : "Developed by",
-    "texto_footer": "Sports Management and Marketing company with more than 20 years of experience in the market."
+    "texto_footer": "Sports Management and Marketing company with more than 20 years of experience in the market.",
+
+    "Dejanos tu consulta, te responderemos a la brevedad.": "Leave us your inquiry, We will respond shortly."
 
 }

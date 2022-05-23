@@ -33,7 +33,7 @@
                             <a href="./jugadorFutbol" style="color:#fff;">
                                 <div class="member-info">
                                     <h4>David Terans</h4>
-                                    <h6>#80</h6>
+                                    <h6>DT</h6>
                                 </div>
                             </a>
                         </div>
@@ -57,7 +57,7 @@
                             <a href="./jugadorFutbol" style="color:#fff;">
                                 <div class="member-info">
                                     <h4>David Terans</h4>
-                                    <h6>#80</h6>
+                                    <h6>DT</h6>
                                 </div>
                             </a>
                         </div>
@@ -80,7 +80,7 @@
                             <a href="./jugadorFutbol" style="color:#fff;">
                                 <div class="member-info">
                                     <h4>David Terans</h4>
-                                    <h6>#80</h6>
+                                    <h6>DT</h6>
                                 </div>
                             </a>
                         </div>

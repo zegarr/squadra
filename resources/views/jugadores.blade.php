@@ -10,10 +10,18 @@
     <main id="main">
         <section id="team" class="team">
             <div class="container">
+                <div class="row mb-5 mt-3">
+                    <div id="menu_posiciones" class="col-12 text-center" style="display: flex;justify-content: center;">
+                        <a href="#Arqueros" class="menuJugadores">{{ __('Arqueros') }}</a>
+                        <a href="#Defensas" class="menuJugadores">{{ __('Defensas') }}</a>
+                        <a href="#Mediocampistas" class="menuJugadores">{{ __('Mediocampistas') }}</a>
+                        <a href="#Delanteros" class="menuJugadores">{{ __('Delanteros') }}</a>
+                    </div>
+                </div>
                 @foreach ($posiciones as $pos)
-                    <div class="row mb-3">
+                    <div class="row mb-3" id="{{ $pos }}">
                         <div class="section-title mb-3">
-                            <a href="#">
+                            <a href="#{{ $pos }}">
                                 <h2 style="font-size: 25px;line-height: 20px;">{{ __($pos) }}</h2>
                             </a>
                         </div>
@@ -25,15 +33,15 @@
                                         <img src="{{ asset('assets/img/players/terans.jpg') }}" class="img-fluid"
                                             alt="">
                                         <div class="social">
-                                            <p>Posicion: <span>Delantero</span></p>
-                                            <p>Nacimiento: <span>27/01/1989</span></p>
-                                            <p>Club Actual: <span>Atlético Paranaense</span></p>
+                                            <p>Posicion: <span>{{ __($jug->obtenerNombrePosicion())}}</span></p>
+                                            <p>Nacimiento: <span>{{$jug->obtenerFechaNacimiento()}}</span></p>
+                                            <p>Club Actual: <span>{{$jug->clubActual}}</span></p>
                                         </div>
                                     </div>
-                                    <a href="./jugadorFutbol" style="color:#fff;">
+                                    <a href="{{route("jugadorFutbol", ["idioma"=> app()->getLocale(), "name" => $jug->name])}}" style="color:#fff;">
                                         <div class="member-info">
-                                            <h4>Jugador nro. {{ $jug->id }}</h4>
-                                            <h6>#80</h6>
+                                            <h4>{{$jug->obtenerNombreCompleto()}}</h4>
+                                            <h6>#{{$jug->nroCamiseta}}</h6>
                                         </div>
                                     </a>
                                 </div>

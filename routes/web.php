@@ -29,8 +29,9 @@ Route::group(["prefix" => "{idioma}"], function () {
         ]);
     })->name("jugadores");
 
-    Route::get('/jugadorFutbol', function () {
-        return view('jugadorFutbol');
+    Route::get('/jugador/{name}', function ($idioma, $name) {
+        $jugador = Player::where('name', $name)->first();
+        return view('jugadorFutbol', ["jugador"=> $jugador]);
     })->name("jugadorFutbol");
 
     Route::get('/directoresTecnicos', function () {
@@ -44,8 +45,8 @@ Route::group(["prefix" => "{idioma}"], function () {
     Route::get('/marketingDeportivo', function () {
         return view('marketingDeportivo');
     })->name("marketingDeportivo");
-
-    Route::get('/nosotros', function () {
-        return view('nosotros');
-    })->name("nosotros");
+ 
+    Route::get('/contacto', function () {
+        return view('contacto');
+    })->name("contacto");
 });

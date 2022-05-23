@@ -18,11 +18,21 @@ class Player extends Model
     const Posicion_Defensa = 3;
     const Posicion_Arquero = 4;
 
+    const Pierna_Habil_Derecha = 0;
+    const Pierna_Habil_Izquierda = 1;
+
     const Posiciones_Nombres = [
         1 => "Arqueros",
         2 => "Defensas",
         3 => "Mediocampistas",
         4 => "Delanteros"
+    ];
+    
+    const Posiciones_Nombres_Sing = [
+        1 => "Arquero",
+        2 => "Defensa",
+        3 => "Mediocampista",
+        4 => "Delantero"
     ];
 
     public function obtenerFechaNacimiento()
@@ -31,7 +41,7 @@ class Player extends Model
     }
     public function obtenerNombrePosicion()
     {
-        return Player::Posiciones_Nombres[$this->posicion];
+        return Player::Posiciones_Nombres_Sing[$this->posicion];
     }
     public function obtenerNombreCompleto()
     {

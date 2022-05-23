@@ -34,7 +34,7 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-.tituloPrincipal{
+.tituloPrincipal {
   font-family: "Montserrat";
 }
 
@@ -146,7 +146,7 @@ h6 {
 .navbar a:focus {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 5px 15px 7px 15px;
   margin-left: 5px;
   font-size: 14px;
@@ -2160,4 +2160,28 @@ section {
 .nosotros .member:hover .social {
   opacity: 1;
   bottom: 15px;
+}
+
+/*
+Custom
+*/
+
+.menuJugadores {
+  background: #353643;
+  color: #fff;
+  border-color: #272936;
+  border-radius: 20px;
+  padding: 15px;
+  margin-right: 20px;
+  border-bottom: solid 4px #fc5725;
+}
+
+.menuJugadores:hover {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  #menu_posiciones{
+    flex-direction: column;
+  }
 }

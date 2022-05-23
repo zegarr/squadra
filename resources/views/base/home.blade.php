@@ -57,15 +57,14 @@
                     <li><a
                             href="{{ route('marketingDeportivo', app()->getLocale()) }}">{{ __('Marketing Deportivo') }}</a>
                     </li>
-                    <li><a href="{{ route('nosotros', app()->getLocale()) }}">{{ __('Nosotros') }}</a></li>
-                    <li class="dropdown"><a href="javascript:void(0)"><span>{{ __('Idioma') }}</span>
-                            <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="{{ route('home', 'es') }}">{{ __('Español') }}</a>
-                            </li>
-                            <li><a href="{{ route('home', 'en') }}">{{ __('Inglés') }}</a>
-                            </li>
-                        </ul>
+                    <li><a href="{{ route('contacto', app()->getLocale()) }}">{{ __('Contacto') }}</a></li>
+                    <li><a style="width: 40px;" href="{{ route('home', 'es') }}"><img
+                                src='{{ asset('assets/img/flags/es.png') }}'
+                                style="width:30px;border-radius:15px;"></a>
+                    </li>
+                    <li><a style="width: 40px;" href="{{ route('home', 'en') }}"><img
+                                src='{{ asset('assets/img/flags/en.jpg') }}'
+                                style="width:30px;border-radius:15px;"></a>
                     </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>

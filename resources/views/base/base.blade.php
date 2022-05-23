@@ -30,7 +30,8 @@
 
 <body style="background-color: #272936; color: #fff;">
     <!-- ======= Header ======= -->
-    <header id="header" style="background-color: rgb(39 41 54);" class="fixed-top d-flex align-items-center  header-transparent titulos_sport">
+    <header id="header" style="background-color: rgb(39 41 54);"
+        class="fixed-top d-flex align-items-center  header-transparent titulos_sport">
         <div class="container d-flex align-items-center justify-content-between">
             <div class="logo">
                 <h1><a href="./"><img style="max-height: 44px;" src="{{ asset('assets/img/logo1.png') }}" alt=""></a>
@@ -56,15 +57,10 @@
                     <li><a
                             href="{{ route('marketingDeportivo', app()->getLocale()) }}">{{ __('Marketing Deportivo') }}</a>
                     </li>
-                    <li><a href="{{ route('nosotros', app()->getLocale()) }}">{{ __('Nosotros') }}</a></li>
-                    <li class="dropdown"><a href="javascript:void(0)"><span>{{ __('Idioma') }}</span>
-                            <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="{{ route(Request::segment(2), 'es') }}">{{ __('Español') }}</a>
-                            </li>
-                            <li><a href="{{ route(Request::segment(2), 'en') }}">{{ __('Inglés') }}</a>
-                            </li>
-                        </ul>
+                    <li><a href="{{ route('contacto', app()->getLocale()) }}">{{ __('Contacto') }}</a></li>
+                    <li><a style="width: 40px;" href="{{ route(Request::segment(2), 'es') }}"><img src='{{ asset("assets/img/flags/es.png") }}' style="width:30px;border-radius:15px;"></a>
+                    </li>
+                    <li><a style="width: 40px;" href="{{ route(Request::segment(2), 'en') }}"><img src='{{ asset("assets/img/flags/en.jpg") }}' style="width:30px;border-radius:15px;"></a>
                     </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -88,7 +84,7 @@
     <footer id="footer">
         <div class="container">
             <img style="width: 150px;" src="./assets/img/sq_logo.png" alt="">
-            <p>{{__("texto_footer")}}</p>
+            <p>{{ __('texto_footer') }}</p>
             <div class="social-links">
                 <a href="https://twitter.com/squadramd" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="https://www.instagram.com/squadramd" class="instagram"><i
@@ -97,10 +93,10 @@
                         class="bx bxl-youtube"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                 <a href="#"><img style="width: 24px;padding-bottom: 5px;" class="img-fluid"
-                        src="./assets/img/tm-1.png"></a>
+                        src="{{ asset('assets/img/tm-1.png') }}""></a>
             </div>
-            <div class="credits">
-                {{__("Desarrolado por")}} <a href="https://www.socialsports.uy/">Social Sports Mkt.</a>
+            <div class=" credits">
+                    {{ __('Desarrolado por') }} <a href="https://www.socialsports.uy/">Social Sports Mkt.</a>
             </div>
         </div>
     </footer><!-- End Footer -->

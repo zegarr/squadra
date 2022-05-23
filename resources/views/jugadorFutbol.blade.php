@@ -1,11 +1,11 @@
-@extends("base.base")
+@extends('base.base')
 
 @section('titulo', '')
 @section('navegacion')
     <ol>
-        <li><a href="./">Inicio</a></li>
-        <li><a href="./jugadores">Jugadores</a></li>
-        <li>Jugador de Fútbol</li>
+        <li><a href="./">{{__("Inicio")}}</a></li>
+        <li><a href="./jugadores">{{__("Jugadores")}}</a></li>
+        <li>{{$jugador->obtenerNombreCompleto()}}</li>
     </ol>
 @endsection
 @section('contenido')
@@ -25,11 +25,11 @@
                     </p>
                 </div>
 
-                <div class="row" style="margin-bottom: 65px;">
+                <div class="row" style="margin-bottom: 35px;">
                     <div class="col-lg-3 col-md-10 col-10" style="position: relative;">
                         <div class="row">
                             <div class="col-12" style="justify-content: center;display: flex;">
-                                <img src="assets/img/players/terans.jpg"
+                                <img src="{{ asset('assets/img/players/terans.jpg') }}"
                                     style="border-radius: 40px;border-bottom: solid #ef6602 14px;width: 90%;"
                                     class="img-fluid" alt="">
                             </div>
@@ -37,13 +37,11 @@
                     </div>
                     <div class="col-lg-1 col-md-2 col-2 pt-lg-0 pt-5"
                         style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
-                        <img src="assets/img/escudos/paranaense.png" class="img-fluid mb-3" style="height: 66px;">
-                        <img src="assets/img/flags/uy_flag.png" class="img-fluid mb-3"
-                            style="border-radius: 15px;height: 40px;">
+                        <img src="{{ asset('assets/img/escudos/paranaense.png') }}" class="img-fluid mb-3">
                         <a href="https://www.transfermarkt.es/david-terans/profil/spieler/261309" class="btn btn-orange"
                             style="border-radius:45px;margin-top: 10px;" target="_blank">
                             <img style="width: 24px;padding-bottom: 5px;" class="img-fluid"
-                                src="./assets/img/tm-1.png"></a>
+                                src="{{ asset('assets/img/tm-1.png') }}"></a>
                     </div>
                     <div class="col-lg-7 col-md-12 col-sm-1 pt-lg-0 pt-5">
                         <iframe style="border-radius: 20px;" width="100%" height="300px"
@@ -54,23 +52,18 @@
                 </div>
                 <div class="row content"
                     style="box-shadow: rgb(34 25 21 / 68%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;border-radius: 19px;padding: 26px;">
-                    <div class="section-title mb-2">
-                        <h2>Más Info.</h2>
-                    </div>
                     <div class="col-12 col-md-4">
                         <ul>
                             <li><i class="bi bi-chevron-right"></i> <strong>Equipo Actual:</strong> <span>Atletico
                                     Paranaense</span></li>
                             <li><i class="bi bi-chevron-right"></i> <strong>Nacionalidad:</strong> <span>Uruguayo</span>
                             </li>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Posición:</strong> <span>Delantero</span></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-4">
                         <ul>
                             <li><i class="bi bi-chevron-right"></i> <strong>Nacimiento:</strong> <span>11/08/1994</span>
-
-                            <li><i class="bi bi-chevron-right"></i> <strong>Peso:</strong> <span>63kg</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Posición:</strong> <span>Delantero</span></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-4">
