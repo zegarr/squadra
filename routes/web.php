@@ -32,7 +32,7 @@ Route::group(["prefix" => "{idioma}"], function () {
     Route::get('/jugador/{name}', function ($idioma, $name) {
         $jugador = Player::where('name', $name)->first();
         return view('jugadorFutbol', ["jugador"=> $jugador]);
-    })->name("jugadorFutbol");
+    })->name("jugador");
 
     Route::get('/directoresTecnicos', function () {
         return view('directoresTecnicos');
@@ -45,7 +45,7 @@ Route::group(["prefix" => "{idioma}"], function () {
     Route::get('/marketingDeportivo', function () {
         return view('marketingDeportivo');
     })->name("marketingDeportivo");
- 
+
     Route::get('/contacto', function () {
         return view('contacto');
     })->name("contacto");

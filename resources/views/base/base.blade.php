@@ -58,9 +58,10 @@
                             href="{{ route('marketingDeportivo', app()->getLocale()) }}">{{ __('Marketing Deportivo') }}</a>
                     </li>
                     <li><a href="{{ route('contacto', app()->getLocale()) }}">{{ __('Contacto') }}</a></li>
-                    <li><a style="width: 40px;" href="{{ route(Request::segment(2), 'es') }}"><img src='{{ asset("assets/img/flags/es.png") }}' style="width:30px;border-radius:15px;"></a>
+
+                    <li><a style="width: 40px;" href="{{ Request::segment(2) == 'jugador' ? route("jugador", ['es', Request::segment(3)]) : route(Request::segment(2), 'es') }}"><img src='{{ asset("assets/img/flags/es.png") }}' style="width:30px;border-radius:15px;"></a>
                     </li>
-                    <li><a style="width: 40px;" href="{{ route(Request::segment(2), 'en') }}"><img src='{{ asset("assets/img/flags/en.jpg") }}' style="width:30px;border-radius:15px;"></a>
+                    <li><a style="width: 40px;" href="{{ Request::segment(2) == 'jugador' ? route("jugador", ['en', Request::segment(3)]) : route(Request::segment(2), 'en') }}"><img src='{{ asset("assets/img/flags/en.jpg") }}' style="width:30px;border-radius:15px;"></a>
                     </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>

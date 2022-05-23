@@ -3,8 +3,8 @@
 @section('titulo', '')
 @section('navegacion')
     <ol>
-        <li><a href="./">{{__("Inicio")}}</a></li>
-        <li><a href="./jugadores">{{__("Jugadores")}}</a></li>
+        <li><a href="{{route('home', app()->getLocale())}}">{{__("Inicio")}}</a></li>
+        <li><a href="{{route("jugadores", app()->getLocale())}}">{{__("Jugadores")}}</a></li>
         <li>{{$jugador->obtenerNombreCompleto()}}</li>
     </ol>
 @endsection
@@ -18,9 +18,9 @@
 
                 <div class="section-title">
                     <h2>Perfil</h2>
-                    <p>David Terans
-                        <a href="https://www.transfermarkt.es/david-terans/profil/spieler/261309" class="btn btn-orange"
-                            style="border-radius:45px;padding: 4px 9px 0px 7px;margin: 0px 0px 4px 7px;" target="_blank"><i
+                    <p>{{$jugador->obtenerNombreCompleto()}}
+                        <a href="javascript:void(0)" class="btn btn-orange"
+                            style="border-radius:45px;padding: 4px 9px 0px 7px;margin: 0px 0px 4px 7px;"><i
                                 class="ri-share-fill"></i></a>
                     </p>
                 </div>
@@ -38,7 +38,7 @@
                     <div class="col-lg-1 col-md-2 col-2 pt-lg-0 pt-5"
                         style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
                         <img src="{{ asset('assets/img/escudos/paranaense.png') }}" class="img-fluid mb-3">
-                        <a href="https://www.transfermarkt.es/david-terans/profil/spieler/261309" class="btn btn-orange"
+                        <a href="{{$jugador->transferMarketLink}}" class="btn btn-orange"
                             style="border-radius:45px;margin-top: 10px;" target="_blank">
                             <img style="width: 24px;padding-bottom: 5px;" class="img-fluid"
                                 src="{{ asset('assets/img/tm-1.png') }}"></a>
@@ -54,22 +54,21 @@
                     style="box-shadow: rgb(34 25 21 / 68%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;border-radius: 19px;padding: 26px;">
                     <div class="col-12 col-md-4">
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Equipo Actual:</strong> <span>Atletico
-                                    Paranaense</span></li>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Nacionalidad:</strong> <span>Uruguayo</span>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Equipo Actual:</strong> <span>{{$jugador->clubActual}}</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Nacionalidad:</strong> <span>{{$jugador->nacionalidad}}</span>
                             </li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-4">
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Nacimiento:</strong> <span>11/08/1994</span>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Posición:</strong> <span>Delantero</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Nacimiento:</strong> <span>{{$jugador->obtenerFechaNacimiento()}}</span>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Posición:</strong> <span>{{$jugador->obtenerNombrePosicion()}}</span></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-4">
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Estatura:</strong> <span>1.71m</span></li>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Pierna Hábil:</strong> <span>Izquierda</span>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Estatura:</strong> <span>{{$jugador->altura}}m</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Pierna Hábil:</strong> <span>{{$jugador->obtenerNombrePiernaHabil()}}</span>
                             </li>
 
                         </ul>

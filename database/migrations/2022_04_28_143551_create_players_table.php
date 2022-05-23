@@ -24,7 +24,7 @@ return new class extends Migration
             $table->integer("piernaHabil")->nullable();
             $table->string("clubActual")->nullable();
             $table->string("nombreClubImagen")->nullable();
-            $table->string("pasaporteComunitario")->nullable();
+            $table->string("nacionalidad")->nullable();
             $table->string("altura")->nullable();
             $table->string("transferMarketLink")->nullable();
             $table->string("linkVideo")->nullable();

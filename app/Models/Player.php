@@ -27,7 +27,7 @@ class Player extends Model
         3 => "Mediocampistas",
         4 => "Delanteros"
     ];
-    
+
     const Posiciones_Nombres_Sing = [
         1 => "Arquero",
         2 => "Defensa",
@@ -46,5 +46,9 @@ class Player extends Model
     public function obtenerNombreCompleto()
     {
         return $this->nombre . ' ' . $this->apellido;
+    }
+    public function obtenerNombrePiernaHabil()
+    {
+        return $this->piernaHabil == $this::Pierna_Habil_Derecha ? "Derecha" : "Izquierda";
     }
 }

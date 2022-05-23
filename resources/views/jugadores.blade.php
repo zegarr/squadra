@@ -38,7 +38,7 @@
                                             <p>Club Actual: <span>{{$jug->clubActual}}</span></p>
                                         </div>
                                     </div>
-                                    <a href="{{route("jugadorFutbol", ["idioma"=> app()->getLocale(), "name" => $jug->name])}}" style="color:#fff;">
+                                    <a href="{{route("jugador", ["idioma"=> app()->getLocale(), "name" => $jug->name])}}" style="color:#fff;">
                                         <div class="member-info">
                                             <h4>{{$jug->obtenerNombreCompleto()}}</h4>
                                             <h6>#{{$jug->nroCamiseta}}</h6>
