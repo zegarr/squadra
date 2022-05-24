@@ -18,7 +18,7 @@ class PlayersSeeder extends Seeder
     public function run()
     {
         DB::table('players')->insert([
-            'name' => "Alan_Aguerre",
+            'name' => "alan_aguerre",
             'nombre' => "Alan",
             'apellido' => "Aguerre",
             'nacimiento' => "1990-08-23",
@@ -35,7 +35,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Federico_Losas",
+            'name' => "federico_losas",
             'nombre' => "Federico",
             'apellido' => "Losas",
             'nacimiento' => "2002-03-28",
@@ -52,7 +52,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Lautaro_Morales",
+            'name' => "lautaro_morales",
             'nombre' => "Lautaro",
             'apellido' => "Morales",
             'nacimiento' => "1999-12-16",
@@ -69,7 +69,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Lautaro_Petruchi",
+            'name' => "lautaro_petruchi",
             'nombre' => "Lautaro",
             'apellido' => "Petruchi",
             'nacimiento' => "1998-09-01",
@@ -86,7 +86,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Braian_Aguirre",
+            'name' => "braian_aguirre",
             'nombre' => "Braian",
             'apellido' => "Aguirre",
             'nacimiento' => "2000-07-28",
@@ -103,7 +103,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Mariano_Bittolo",
+            'name' => "mariano_bittolo",
             'nombre' => "Mariano",
             'apellido' => "Bíttolo",
             'nacimiento' => "1990-04-24",
@@ -120,7 +120,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Felipe_Campos",
+            'name' => "felipe_campos",
             'nombre' => "Felipe",
             'apellido' => "Campos",
             'nacimiento' => "1993-11-08",
@@ -137,7 +137,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Kevin_Lomonaco",
+            'name' => "kevin_lomonaco",
             'nombre' => "Kevin",
             'apellido' => "Lomonaco",
             'nacimiento' => "2002-01-08",
@@ -154,7 +154,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Joaquin_Orrantia",
+            'name' => "joaquin_orrantia",
             'nombre' => "Joaquin",
             'apellido' => "Orrantia",
             'nacimiento' => "2006-01-23",
@@ -171,7 +171,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Thiago_Santamaria",
+            'name' => "thiago_santamaria",
             'nombre' => "Thiago",
             'apellido' => "Santamaría",
             'nacimiento' => "2003-04-04",
@@ -188,7 +188,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Tiago_Simoni",
+            'name' => "tiago_simoni",
             'nombre' => "Tiago",
             'apellido' => "Simoni",
             'nacimiento' => "2004-04-30",
@@ -205,7 +205,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Lucas_Blanco",
+            'name' => "lucas_blanco",
             'nombre' => "Lucas",
             'apellido' => "Blanco",
             'nacimiento' => "2001-04-19",
@@ -222,7 +222,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Ignacio_Cechi",
+            'name' => "ignacio_cechi",
             'nombre' => "Ignacio",
             'apellido' => "Cechi",
             'nacimiento' => "2001-07-26",
@@ -239,7 +239,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Pablo_Cordoba",
+            'name' => "pablo_cordoba",
             'nombre' => "Pablo",
             'apellido' => "Cordoba",
             'nacimiento' => "2000-10-31",
@@ -256,7 +256,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Lucas_Gimenez",
+            'name' => "lucas_gimenez",
             'nombre' => "Lucas",
             'apellido' => "Giménez",
             'nacimiento' => "1999-02-22",
@@ -273,7 +273,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Leonardo_Heredia",
+            'name' => "leonardo_heredia",
             'nombre' => "Leonardo",
             'apellido' => "Heredia",
             'nacimiento' => "1996-01-11",
@@ -290,7 +290,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Sebastian_Jaurena",
+            'name' => "sebastian_jaurena",
             'nombre' => "Sebastián",
             'apellido' => "Jaurena",
             'nacimiento' => "1999-07-22",
@@ -307,7 +307,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Thiago_Porra",
+            'name' => "thiago_porra",
             'nombre' => "Thiago",
             'apellido' => "Porra",
             'nacimiento' => "2006-04-12",
@@ -324,7 +324,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Guillermo_Santillan",
+            'name' => "guillermo_santillan",
             'nombre' => "Guillermo",
             'apellido' => "Santillan",
             'nacimiento' => "1999-05-11",
@@ -341,7 +341,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Milton_Zarate",
+            'name' => "milton_zarate",
             'nombre' => "Milton",
             'apellido' => "Zarate",
             'nacimiento' => "1988-09-05",
@@ -358,7 +358,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Juan_Cruz_Avaca",
+            'name' => "juan_cruz_avaca",
             'nombre' => "Juan Cruz",
             'apellido' => "Avaca",
             'nacimiento' => "2006-01-23",
@@ -375,7 +375,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Milton_Gimenez",
+            'name' => "milton_gimenez",
             'nombre' => "Milton",
             'apellido' => "Giménez",
             'nacimiento' => "1996-08-12",
@@ -392,7 +392,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Leonardo_Ramos",
+            'name' => "leonardo_ramos",
             'nombre' => "Leonardo",
             'apellido' => "Ramos",
             'nacimiento' => "1989-08-21",
@@ -409,7 +409,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Valentino_Simoni",
+            'name' => "valentino_simoni",
             'nombre' => "Valentino",
             'apellido' => "Simoni",
             'nacimiento' => "2004-04-30",
@@ -426,7 +426,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "David_Terans",
+            'name' => "david_terans",
             'nombre' => "David",
             'apellido' => "Terans",
             'nacimiento' => "1994-08-11",
@@ -443,7 +443,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Gaston_Veron",
+            'name' => "gaston_veron",
             'nombre' => "Gaston",
             'apellido' => "Veron",
             'nacimiento' => "2001-04-23",
@@ -460,7 +460,7 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "Daniel_Villalva",
+            'name' => "daniel_villalva",
             'nombre' => "Daniel",
             'apellido' => "Villalva",
             'nacimiento' => "1992-07-06",
