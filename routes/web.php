@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 use App\Models\Player;
+use App\Models\MarketingPost;
 
 Route::redirect("/", "/es");
 
@@ -31,7 +32,7 @@ Route::group(["prefix" => "{idioma}"], function () {
 
     Route::get('/jugador/{name}', function ($idioma, $name) {
         $jugador = Player::where('name', $name)->first();
-        return view('jugadorFutbol', ["jugador"=> $jugador]);
+        return view('jugadorFutbol', ["jugador" => $jugador]);
     })->name("jugador");
 
     Route::get('/directoresTecnicos', function () {
@@ -43,7 +44,8 @@ Route::group(["prefix" => "{idioma}"], function () {
     })->name("servicios");
 
     Route::get('/marketingDeportivo', function () {
-        return view('marketingDeportivo');
+        $marketingPosts = MarketingPost::all();
+        return view('marketingDeportivo', compact("marketingPosts"));
     })->name("marketingDeportivo");
 
     Route::get('/contacto', function () {

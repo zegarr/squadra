@@ -34,12 +34,12 @@
         class="fixed-top d-flex align-items-center  header-transparent titulos_sport">
         <div class="container d-flex align-items-center justify-content-between">
             <div class="logo">
-                <h1><a href="./"><img style="max-height: 44px;" src="{{ asset('assets/img/logo1.png') }}" alt=""></a>
+                <h1><a href="{{route("home", app()->getLocale())}}"><img style="max-height: 44px;" src="{{ asset('assets/img/logo1.png') }}" alt=""></a>
                 </h1>
             </div>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="./">{{ __('Inicio') }}</a></li>
+                    <li><a href="{{route("home", app()->getLocale())}}">{{ __('Inicio') }}</a></li>
                     <li class="dropdown"><a
                             href="javascript:void(0)"><span>{{ __('Management Deportivo') }}</span>
                             <i class="bi bi-chevron-down"></i></a>

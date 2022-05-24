@@ -30,7 +30,7 @@
                             <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
                                 <div class="member" data-aos="fade-up">
                                     <div class="member-img">
-                                        <img src="{{ asset('assets/img/players/terans.jpg') }}" class="img-fluid"
+                                        <img style="height: 362px;" src="{{ asset('assets/img/players/'.$jug->name.'.jpg') }}" class="img-fluid"
                                             alt="">
                                         <div class="social">
                                             <p>Posicion: <span>{{ __($jug->obtenerNombrePosicion())}}</span></p>

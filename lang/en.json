@@ -23,6 +23,15 @@
     "Defensa":"Defender",
     "Delantero":"Striker",
 
+    "Perfil":"Profile",
+    "Galeria":"Gallery",
+    "Equipo Actual":"Current Club",
+    "Nacionalidad":"Nationality",
+    "Nacimiento":"Birth",
+    "Posición":"Position",
+    "Estatura":"Height",
+    "Pierna Hábil":"Main Foot.",
+
     "texto_jugadores_dt":"Our business is based on the representation of soccer players, both professional and amateur, and on advising national and foreign clubs, and other sports entities. For this reason, Squadra designed its company on three interrelated areas that cover all aspects of the business.",
     "Asesoramiento integral para el Deportista":"Comprehensive Advice for the Athlete",
     "Agente AFA" : "AFA Agent",

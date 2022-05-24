@@ -2181,7 +2181,12 @@ Custom
 }
 
 @media (max-width: 767px) {
-  #menu_posiciones{
+  #menu_posiciones {
     flex-direction: column;
   }
+}
+
+.img_ficha {
+  padding: 17px !important;
+  border-radius: 25px;
 }

@@ -1,10 +1,10 @@
-@extends("base.base")
+@extends('base.base')
 
 @section('titulo', __('Marketing Deportivo'))
 @section('navegacion')
     <ol>
-        <li><a href="./">{{__("Inicio")}}</a></li>
-        <li>{{__('Marketing Deportivo')}}</li>
+        <li><a href="./">{{ __('Inicio') }}</a></li>
+        <li>{{ __('Marketing Deportivo') }}</li>
     </ol>
 @endsection
 @section('contenido')
@@ -12,24 +12,22 @@
         <section id="marketing-dep" class="marketing-dep pt-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 mt-3" data-aos="fade-up">
-                        <div class="icon-box row">
-                            <div class="image-marketing-dep col-lg-4 col-sm-12"><img
-                                    src="assets/img/md/Pretemporada-Colon.jpg" alt=""></div>
-                            <div class="cont-title col-lg-8 col-sm-12">
-                                <h4 class="title"><a href="Javascript:void(0);">HEREDIA COMENZÓ SU PRETEMPORADA EN COLON</a></h4>
-                                <p class="description">El plantel de Colón comenzó este lunes la pretemporada, de cara a
-                                    una exigente segunda parte de 2018, donde deberá afrontar la segunda fase de la Copa
-                                    Sudamericana (enfrentará a San Pablo de Brasil), la primera ronda de la Copa Argent ina
-                                    y
-                                    la etapa inicial de la Superliga.</p>
-                                <div style="display: flex;justify-content: flex-end;">
-                                    <img src="./assets/img/md/marcas/intel.jpg" style="width: 60px;border-radius: 10px;"
-                                        class="img-fluid">
+                    @foreach ($marketingPosts as $mp)
+                        <div class="col-lg-12 col-md-12 mt-3" data-aos="fade-up">
+                            <div class="icon-box row">
+                                <div class="image-marketing-dep col-lg-4 col-sm-12"><img
+                                        src="{{ asset('assets/img/md/' . $mp->id . '.jpg') }}" alt=""></div>
+                                <div class="cont-title col-lg-8 col-sm-12">
+                                    <h4 class="title"><a href="Javascript:void(0);">{{ $mp->titulo }}</a></h4>
+                                    <p class="description">{{ $mp->cuerpo }}</p>
+                                    <div style="display: flex;justify-content: flex-end;">
+                                        <img src="{{ asset('assets/img/md/iconos/' . $mp->icono . '.jpg') }}"
+                                            style="width: 60px;border-radius: 10px;" class="img-fluid">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section><!-- End Services Section -->

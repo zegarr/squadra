@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string("nacionalidad")->nullable();
             $table->string("altura")->nullable();
             $table->string("transferMarketLink")->nullable();
-            $table->string("linkVideo")->nullable();
+            $table->string("youTubeCodigo")->nullable();
             $table->timestamps();
         });
     }
