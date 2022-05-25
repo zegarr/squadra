@@ -15,7 +15,7 @@
                     <a href="https://www.youtube.com/channel/UC17OzsBYDlMt4lxJ-7hAdhQ" class="youtube"><i
                             class="bx bxl-youtube"></i></a>
                     <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                    <a href="#"><img style="width: 24px;padding-bottom: 5px;" class="img-fluid"
+                    <a href="https://www.transfermarkt.es/squadra-management-deportivo/beraterfirma/berater/8110"><img style="width: 24px;padding-bottom: 5px;" class="img-fluid"
                             src="{{asset('assets/img/tm-1.png')}}"></a>
                 </div>
             </div>

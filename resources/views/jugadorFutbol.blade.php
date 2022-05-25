@@ -19,8 +19,8 @@
                 <div class="section-title">
                     <h2>{{__("Perfil")}}</h2>
                     <p>{{ $jugador->obtenerNombreCompleto() }}
-                        <a href="javascript:void(0)" class="btn btn-orange"
-                            style="border-radius:45px;padding: 4px 9px 0px 7px;margin: 0px 0px 4px 7px;"><i
+                        <a href="javascript:void(0)" class="btn btn-orange share"
+                        data-bs-toggle="tooltip" data-url='{{Request::url()}}' data-nombre-jugador="{{$jugador->obtenerNombreCompleto()}}" data-bs-placement="top" title="Copiar link." style="border-radius:45px;padding: 4px 9px 0px 7px;margin: 0px 0px 4px 7px;"><i
                                 class="ri-share-fill"></i></a>
                     </p>
                 </div>
