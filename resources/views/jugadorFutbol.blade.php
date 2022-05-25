@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="row" style="margin-bottom: 35px;">
-                    <div class="col-lg-3 col-md-10 col-10" style="position: relative;">
+                    <div class="col-lg-3 col-md-10 col-8" style="position: relative;">
                         <div class="row">
                             <div class="col-12" style="justify-content: center;display: flex;">
                                 <img src="{{ asset('assets/img/players/' . $jugador->name . '.jpg') }}"
@@ -35,7 +35,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-1 col-md-2 col-2 pt-lg-0 pt-5"
+                    <div class="col-lg-1 col-md-2 col-4 pt-lg-0 pt-5"
                         style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
                         <img src="{{ asset('assets/img/escudos/' . $jugador->nombreClubImagen . '.png') }}"
                             class="img-fluid mb-3">
