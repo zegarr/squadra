@@ -53,15 +53,15 @@
                         </ul>
                     </li>
                     <li><a href="{{ route('servicios', app()->getLocale()) }}">{{ __('Servicios') }}</a></li>
-                    <li><a href="#portfolio">{{ __('Noticias') }}</a></li>
+                    <li><a href="{{ route('noticias', app()->getLocale()) }}">{{ __('Noticias') }}</a></li>
                     <li><a
                             href="{{ route('marketingDeportivo', app()->getLocale()) }}">{{ __('Marketing Deportivo') }}</a>
                     </li>
                     <li><a href="{{ route('contacto', app()->getLocale()) }}">{{ __('Contacto') }}</a></li>
 
-                    <li><a style="width: 40px;" href="{{ Request::segment(2) == 'jugador' ? route("jugador", ['es', Request::segment(3)]) : route(Request::segment(2), 'es') }}"><img src='{{ asset("assets/img/flags/es.png") }}' style="width:30px;border-radius:15px;"></a>
+                    <li><a href="{{ Request::segment(2) == 'jugador' ? route("jugador", ['es', Request::segment(3)]) : route(Request::segment(2), 'es') }}"><img src='{{ asset("assets/img/flags/es.png") }}' style="width:30px;border-radius:15px;"></a>
                     </li>
-                    <li><a style="width: 40px;" href="{{ Request::segment(2) == 'jugador' ? route("jugador", ['en', Request::segment(3)]) : route(Request::segment(2), 'en') }}"><img src='{{ asset("assets/img/flags/en.jpg") }}' style="width:30px;border-radius:15px;"></a>
+                    <li><a href="{{ Request::segment(2) == 'jugador' ? route("jugador", ['en', Request::segment(3)]) : route(Request::segment(2), 'en') }}"><img src='{{ asset("assets/img/flags/en.jpg") }}' style="width:30px;border-radius:15px;"></a>
                     </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -85,7 +85,7 @@
     <footer id="footer">
         <div class="container">
             <img style="width: 150px;" src="./assets/img/sq_logo.png" alt="">
-            <p>{{ __('texto_footer') }}</p>
+            <p>{{ __('texto_footer', ["year"=> (string)intval(date("y"))-1 ]) }}</p>
             <div class="social-links">
                 <a href="https://twitter.com/squadramd" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="https://www.instagram.com/squadramd" class="instagram"><i

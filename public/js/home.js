@@ -1137,8 +1137,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(typed_js__WEBPACK_IMPORTED_MODULE_0__);
 
 var url = window.location.href;
+var year = new Date().getFullYear() - 2001;
 var idioma = url.split('/').pop();
-var titulo = ["POTENCIAR^500LA^500PASION^2000", "SQUADRA^2000", "21^500 AÑOS^500 DE^500 TRAYECTORIA^2000"];
+var titulo = ["POTENCIAR^500LA^500PASION^2000", "SQUADRA^2000", year + "^500 AÑOS^500 DE^500 TRAYECTORIA^2000"];
 
 if (idioma == "en") {
   titulo = ["BOOST^500 PASSION^2000", "SQUADRA^2000", "21^500 YEARS^500 OF^500 EXPERIENCE^2000"];

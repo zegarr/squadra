@@ -23,14 +23,14 @@ class Player extends Model
 
     const Posiciones_Nombres = [
         1 => "Arqueros",
-        2 => "Defensas",
+        2 => "Defensores",
         3 => "Mediocampistas",
         4 => "Delanteros"
     ];
 
     const Posiciones_Nombres_Sing = [
         1 => "Arquero",
-        2 => "Defensa",
+        2 => "Defensor",
         3 => "Mediocampista",
         4 => "Delantero"
     ];

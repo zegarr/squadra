@@ -43,6 +43,10 @@ Route::group(["prefix" => "{idioma}"], function () {
         return view('servicios');
     })->name("servicios");
 
+    Route::get('/noticias', function () {
+        return view('noticias');
+    })->name("noticias");
+
     Route::get('/marketingDeportivo', function () {
         $marketingPosts = MarketingPost::all();
         return view('marketingDeportivo', compact("marketingPosts"));

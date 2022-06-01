@@ -76,7 +76,7 @@
                     <div class="col-12 col-sm-4">
                         <ul>
                             <li><i class="bi bi-chevron-right"></i> <strong>{{__("Estatura")}}:</strong>
-                                <span>{{ $jugador->altura }}m</span>
+                                <span>{{ $jugador->altura ? $jugador->altura : "-" }}</span>
                             </li>
                             <li><i class="bi bi-chevron-right"></i> <strong>{{__("Pierna Hábil")}}:</strong>
                                 <span>{{ $jugador->obtenerNombrePiernaHabil() }}</span>
@@ -100,7 +100,7 @@
                         @for ($i = 1; $i <= 5; $i++)
                             <div class="swiper-slide">
                                 <div class="testimonial-item img_ficha">
-                                    <img style="border-radius: 25px;"
+                                    <img style="border-radius: 25px;height: 100%;"
                                         src="{{ asset('assets/img/players/'.$jugador->name.'_'.$i.'.jpg') }}"
                                         class="img-fluid">
                                 </div>

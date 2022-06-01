@@ -1,10 +1,10 @@
 @extends('base.base')
 
-@section('titulo', 'Servicios')
+@section('titulo', __('Servicios'))
 @section('navegacion')
     <ol>
-        <li><a href="./">Inicio</a></li>
-        <li>Servicios</li>
+        <li><a href="./">{{__('Inicio')}}</a></li>
+        <li>{{__('Servicios')}}</li>
     </ol>
 @endsection
 @section('contenido')
@@ -48,7 +48,7 @@
                         <a class="nav-link active" data-bs-toggle="tab">
                             <i class="ri-chat-quote-fill col-3" style="text-align: center;"></i>
                             <h4 class=" d-lg-block col-9" style="text-align: center;text-transform: uppercase;">
-                                {{ __('Soporte de Redes Socuales & Comunicación y Marketing') }}</h4>
+                                {{ __('Soporte de Redes Sociales & Comunicación y Marketing') }}</h4>
                         </a>
                     </li>
                     <li class="nav-item col-12 col-md-6 col-lg-4 mb-3" data-aos="zoom-in" data-aos-delay="300">

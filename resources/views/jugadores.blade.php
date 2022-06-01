@@ -13,7 +13,7 @@
                 <div class="row mb-5 mt-3">
                     <div id="menu_posiciones" class="col-12 text-center" style="display: flex;justify-content: center;">
                         <a href="#Arqueros" class="menuJugadores">{{ __('Arqueros') }}</a>
-                        <a href="#Defensas" class="menuJugadores">{{ __('Defensas') }}</a>
+                        <a href="#Defensores" class="menuJugadores">{{ __('Defensores') }}</a>
                         <a href="#Mediocampistas" class="menuJugadores">{{ __('Mediocampistas') }}</a>
                         <a href="#Delanteros" class="menuJugadores">{{ __('Delanteros') }}</a>
                     </div>

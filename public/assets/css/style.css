@@ -146,7 +146,7 @@ h6 {
 .navbar a:focus {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 5px 15px 7px 15px;
   margin-left: 5px;
   font-size: 14px;
@@ -1995,7 +1995,7 @@ section {
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  min-height: 320px;
+  height: 400px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -2189,4 +2189,8 @@ Custom
 .img_ficha {
   padding: 17px !important;
   border-radius: 25px;
+}
+
+#es-header {
+  display: none;
 }
