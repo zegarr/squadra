@@ -341,23 +341,6 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "milton_zarate",
-            'nombre' => "Milton",
-            'apellido' => "Zarate",
-            'nacimiento' => "1988-09-05",
-            'posicion' => 3,
-            'nroCamiseta' => 10,
-            'piernaHabil' => 0,
-            'clubActual' => "Libre",
-            'nombreClubImagen' => 'libre',
-            'nacionalidad' => "Argentina",
-            'altura' => "1,75",
-            'transferMarketLink' => 'https://www.transfermarkt.es/milton-zarate/profil/spieler/127246',
-            'youTubeCodigo' => '0fv438yGUtI',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-        ]);
-        DB::table('players')->insert([
             'name' => "juan_cruz_avaca",
             'nombre' => "Juan Cruz",
             'apellido' => "Avaca",
