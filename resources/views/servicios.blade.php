@@ -46,7 +46,8 @@
                     </li>
                     <li class="nav-item col-12 col-md-6 col-lg-4 mb-3" data-aos="zoom-in" data-aos-delay="300">
                         <a class="nav-link active" data-bs-toggle="tab">
-                            <i class="ri-chat-quote-fill col-3" style="text-align: center;"></i>
+                            {{-- <i class="ri-chat-quote-fill col-3" style="text-align: center;"></i> --}}
+                            <img src="{{asset("assets/img/iconos/socialmedia.png")}}" class="img-fluid" style="width: 65px;">
                             <h4 class=" d-lg-block col-9" style="text-align: center;text-transform: uppercase;">
                                 {{ __('Soporte de Redes Sociales & Comunicación y Marketing') }}</h4>
                         </a>
