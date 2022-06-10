@@ -53,7 +53,7 @@
                         </ul>
                     </li>
                     <li><a href="{{ route('servicios', app()->getLocale()) }}">{{ __('Servicios') }}</a></li>
-                    <li><a href="#portfolio">{{ __('Noticias') }}</a></li>
+                    <li><a href="{{ route('noticias', app()->getLocale()) }}">{{ __('Noticias') }}</a></li>
                     <li><a
                             href="{{ route('marketingDeportivo', app()->getLocale()) }}">{{ __('Marketing Deportivo') }}</a>
                     </li>
