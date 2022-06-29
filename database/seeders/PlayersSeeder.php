@@ -17,6 +17,7 @@ class PlayersSeeder extends Seeder
      */
     public function run()
     {
+        //arqueros
         DB::table('players')->insert([
             'name' => "alan_aguerre",
             'nombre' => "Alan",
@@ -31,23 +32,6 @@ class PlayersSeeder extends Seeder
             'altura' => "1,81 m",
             'transferMarketLink' => 'https://www.transfermarkt.es/alan-aguerre/profil/spieler/269784',
             'youTubeCodigo' => 'jUHQls7b7WI',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-        ]);
-        DB::table('players')->insert([
-            'name' => "federico_losas",
-            'nombre' => "Federico",
-            'apellido' => "Losas",
-            'nacimiento' => "2002-03-28",
-            'posicion' => 1,
-            'nroCamiseta' => 1,
-            'piernaHabil' => 0,
-            'clubActual' => "CA Chacarita Juniors (ARG)",
-            'nombreClubImagen' => 'chacarita',
-            'nacionalidad' => "Argentina",
-            'altura' => "1,84",
-            'transferMarketLink' => 'https://www.transfermarkt.es/federico-losas/profil/spieler/661127',
-            'youTubeCodigo' => 'JZSgiuzQ9_M',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -69,6 +53,23 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
+            'name' => "federico_losas",
+            'nombre' => "Federico",
+            'apellido' => "Losas",
+            'nacimiento' => "2002-03-28",
+            'posicion' => 1,
+            'nroCamiseta' => 1,
+            'piernaHabil' => 0,
+            'clubActual' => "CA Chacarita Juniors (ARG)",
+            'nombreClubImagen' => 'chacarita',
+            'nacionalidad' => "Argentina",
+            'altura' => "1,84",
+            'transferMarketLink' => 'https://www.transfermarkt.es/federico-losas/profil/spieler/661127',
+            'youTubeCodigo' => 'JZSgiuzQ9_M',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+        DB::table('players')->insert([
             'name' => "lautaro_petruchi",
             'nombre' => "Lautaro",
             'apellido' => "Petruchi",
@@ -85,20 +86,24 @@ class PlayersSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
+
+        //end arqueros
+        
+        //defensores
         DB::table('players')->insert([
-            'name' => "lautaro_di_lollo",
-            'nombre' => "Lautaro",
-            'apellido' => "di Lollo",
-            'nacimiento' => "2004-10-03",
+            'name' => "kevin_lomonaco",
+            'nombre' => "Kevin",
+            'apellido' => "Lomonaco",
+            'nacimiento' => "2002-01-08",
             'posicion' => 2,
-            'nroCamiseta' => 2,
+            'nroCamiseta' => 14,
             'piernaHabil' => 0,
-            'clubActual' => "CA Boca Juniors (ARG)",
-            'nombreClubImagen' => 'boca',
+            'clubActual' => "Red Bull Bragantino (BRA)",
+            'nombreClubImagen' => 'bragantino',
             'nacionalidad' => "Argentina",
-            'altura' => "1,89",
-            'transferMarketLink' => 'https://www.transfermarkt.co/lautaro-di-lollo/profil/spieler/1019744',
-            'youTubeCodigo' => null,
+            'altura' => "1,92",
+            'transferMarketLink' => 'https://www.transfermarkt.es/kevin-lomonaco/profil/spieler/661136',
+            'youTubeCodigo' => 'gg3lY0SYZGY',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -136,6 +141,8 @@ class PlayersSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
+
+        
         DB::table('players')->insert([
             'name' => "felipe_campos",
             'nombre' => "Felipe",
@@ -150,40 +157,6 @@ class PlayersSeeder extends Seeder
             'altura' => "1,79",
             'transferMarketLink' => 'https://www.transfermarkt.es/felipe-campos/profil/spieler/214645',
             'youTubeCodigo' => '4cW38Q7-lkE',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-        ]);
-        DB::table('players')->insert([
-            'name' => "kevin_lomonaco",
-            'nombre' => "Kevin",
-            'apellido' => "Lomonaco",
-            'nacimiento' => "2002-01-08",
-            'posicion' => 2,
-            'nroCamiseta' => 14,
-            'piernaHabil' => 0,
-            'clubActual' => "Red Bull Bragantino (BRA)",
-            'nombreClubImagen' => 'bragantino',
-            'nacionalidad' => "Argentina",
-            'altura' => "1,92",
-            'transferMarketLink' => 'https://www.transfermarkt.es/kevin-lomonaco/profil/spieler/661136',
-            'youTubeCodigo' => 'gg3lY0SYZGY',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-        ]);
-        DB::table('players')->insert([
-            'name' => "joaquin_orrantia",
-            'nombre' => "Joaquin",
-            'apellido' => "Orrantia",
-            'nacimiento' => "2006-01-23",
-            'posicion' => 2,
-            'nroCamiseta' => 2,
-            'piernaHabil' => 0,
-            'clubActual' => "Argentinos Juniors (ARG)",
-            'nombreClubImagen' => 'argentinos',
-            'nacionalidad' => "Argentina",
-            'altura' => "1,75",
-            'transferMarketLink' => 'https://www.transfermarkt.es',
-            'youTubeCodigo' => 'Y97at2qX_jw',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -222,36 +195,19 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "lucas_blanco",
-            'nombre' => "Lucas",
-            'apellido' => "Blanco",
-            'nacimiento' => "2001-04-13",
-            'posicion' => 3,
-            'nroCamiseta' => 8,
+            'name' => "joaquin_orrantia",
+            'nombre' => "Joaquin",
+            'apellido' => "Orrantia",
+            'nacimiento' => "2006-01-23",
+            'posicion' => 2,
+            'nroCamiseta' => 2,
             'piernaHabil' => 0,
-            'clubActual' => "Club Agropecuario Argentino (ARG)",
-            'nombreClubImagen' => 'agropecuario',
+            'clubActual' => "Argentinos Juniors (ARG)",
+            'nombreClubImagen' => 'argentinos',
             'nacionalidad' => "Argentina",
             'altura' => "1,75",
             'transferMarketLink' => 'https://www.transfermarkt.es',
-            'youTubeCodigo' => null,
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-        ]);
-        DB::table('players')->insert([
-            'name' => "ignacio_cechi",
-            'nombre' => "Ignacio",
-            'apellido' => "Cechi",
-            'nacimiento' => "2001-07-26",
-            'posicion' => 3,
-            'nroCamiseta' => 24,
-            'piernaHabil' => 0,
-            'clubActual' => "Club Atlético Lanús (ARG)",
-            'nombreClubImagen' => 'lanus',
-            'nacionalidad' => "Argentina",
-            'altura' => "1,79",
-            'transferMarketLink' => 'https://www.transfermarkt.es/ignacio-cechi/profil/spieler/836281',
-            'youTubeCodigo' => null,
+            'youTubeCodigo' => 'Y97at2qX_jw',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -273,22 +229,25 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "lucas_gimenez",
-            'nombre' => "Lucas",
-            'apellido' => "Giménez",
-            'nacimiento' => "1999-02-22",
-            'posicion' => 3,
-            'nroCamiseta' => 35,
+            'name' => "lautaro_di_lollo",
+            'nombre' => "Lautaro",
+            'apellido' => "di Lollo",
+            'nacimiento' => "2004-10-03",
+            'posicion' => 2,
+            'nroCamiseta' => 2,
             'piernaHabil' => 0,
-            'clubActual' => "CA Platense (ARG)",
-            'nombreClubImagen' => 'platense',
+            'clubActual' => "CA Boca Juniors (ARG)",
+            'nombreClubImagen' => 'boca',
             'nacionalidad' => "Argentina",
-            'altura' => "1,63",
-            'transferMarketLink' => 'https://www.transfermarkt.es/lucas-gimenez/profil/spieler/721429',
+            'altura' => "1,89",
+            'transferMarketLink' => 'https://www.transfermarkt.co/lautaro-di-lollo/profil/spieler/1019744',
             'youTubeCodigo' => null,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
+        // end defensores
+
+        //mediocampistas
         DB::table('players')->insert([
             'name' => "leonardo_heredia",
             'nombre' => "Leonardo",
@@ -324,17 +283,52 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "thiago_porra",
-            'nombre' => "Thiago",
-            'apellido' => "Porra",
-            'nacimiento' => "2006-04-12",
+            'name' => "ignacio_cechi",
+            'nombre' => "Ignacio",
+            'apellido' => "Cechi",
+            'nacimiento' => "2001-07-26",
             'posicion' => 3,
-            'nroCamiseta' => 10,
+            'nroCamiseta' => 24,
             'piernaHabil' => 0,
-            'clubActual' => "CA San Lorenzo (ARG)",
-            'nombreClubImagen' => 'san_lorenzo',
+            'clubActual' => "Club Atlético Lanús (ARG)",
+            'nombreClubImagen' => 'lanus',
             'nacionalidad' => "Argentina",
-            'altura' => "1,73",
+            'altura' => "1,79",
+            'transferMarketLink' => 'https://www.transfermarkt.es/ignacio-cechi/profil/spieler/836281',
+            'youTubeCodigo' => null,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('players')->insert([
+            'name' => "lucas_gimenez",
+            'nombre' => "Lucas",
+            'apellido' => "Giménez",
+            'nacimiento' => "1999-02-22",
+            'posicion' => 3,
+            'nroCamiseta' => 35,
+            'piernaHabil' => 0,
+            'clubActual' => "CA Platense (ARG)",
+            'nombreClubImagen' => 'platense',
+            'nacionalidad' => "Argentina",
+            'altura' => "1,63",
+            'transferMarketLink' => 'https://www.transfermarkt.es/lucas-gimenez/profil/spieler/721429',
+            'youTubeCodigo' => null,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+        DB::table('players')->insert([
+            'name' => "lucas_blanco",
+            'nombre' => "Lucas",
+            'apellido' => "Blanco",
+            'nacimiento' => "2001-04-13",
+            'posicion' => 3,
+            'nroCamiseta' => 8,
+            'piernaHabil' => 0,
+            'clubActual' => "Club Agropecuario Argentino (ARG)",
+            'nombreClubImagen' => 'agropecuario',
+            'nacionalidad' => "Argentina",
+            'altura' => "1,75",
             'transferMarketLink' => 'https://www.transfermarkt.es',
             'youTubeCodigo' => null,
             'created_at' => Carbon::now(),
@@ -358,73 +352,25 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
-            'name' => "juan_cruz_avaca",
-            'nombre' => "Juan Cruz",
-            'apellido' => "Avaca",
-            'nacimiento' => "2006-01-23",
-            'posicion' => 4,
+            'name' => "thiago_porra",
+            'nombre' => "Thiago",
+            'apellido' => "Porra",
+            'nacimiento' => "2006-04-12",
+            'posicion' => 3,
             'nroCamiseta' => 10,
-            'piernaHabil' => 1,
+            'piernaHabil' => 0,
             'clubActual' => "CA San Lorenzo (ARG)",
             'nombreClubImagen' => 'san_lorenzo',
             'nacionalidad' => "Argentina",
-            'altura' => "1,79",
+            'altura' => "1,73",
             'transferMarketLink' => 'https://www.transfermarkt.es',
             'youTubeCodigo' => null,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
-        DB::table('players')->insert([
-            'name' => "milton_gimenez",
-            'nombre' => "Milton",
-            'apellido' => "Giménez",
-            'nacimiento' => "1996-08-12",
-            'posicion' => 4,
-            'nroCamiseta' => 9,
-            'piernaHabil' => 0,
-            'clubActual' => "Club Necaxa (MEX)",
-            'nombreClubImagen' => 'necaxa',
-            'nacionalidad' => "Argentina",
-            'altura' => "1,84",
-            'transferMarketLink' => 'https://www.transfermarkt.es/milton-gimenez/profil/spieler/730779',
-            'youTubeCodigo' => 'BBxo_kFGfgU',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-        ]);
-        DB::table('players')->insert([
-            'name' => "leonardo_ramos",
-            'nombre' => "Leonardo",
-            'apellido' => "Ramos",
-            'nacimiento' => "1989-08-21",
-            'posicion' => 4,
-            'nroCamiseta' => 33,
-            'piernaHabil' => 0,
-            'clubActual' => "Unión de Santa Fé (ARG)",
-            'nombreClubImagen' => 'union',
-            'nacionalidad' => "Argentina",
-            'altura' => "1,86",
-            'transferMarketLink' => 'https://www.transfermarkt.es/leonardo-ramos/profil/spieler/341298',
-            'youTubeCodigo' => 'jXeSjzzAerw',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-        ]);
-        DB::table('players')->insert([
-            'name' => "valentino_simoni",
-            'nombre' => "Valentino",
-            'apellido' => "Simoni",
-            'nacimiento' => "2004-04-30",
-            'posicion' => 4,
-            'nroCamiseta' => 9,
-            'piernaHabil' => 0,
-            'clubActual' => "CA Boca Juniors (ARG)",
-            'nombreClubImagen' => 'boca',
-            'nacionalidad' => "Argentina",
-            'altura' => "1,84",
-            'transferMarketLink' => 'https://www.transfermarkt.es',
-            'youTubeCodigo' => null,
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-        ]);
+        //end mediocampistas
+
+        //delantero
         DB::table('players')->insert([
             'name' => "david_terans",
             'nombre' => "David",
@@ -460,6 +406,40 @@ class PlayersSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
         DB::table('players')->insert([
+            'name' => "milton_gimenez",
+            'nombre' => "Milton",
+            'apellido' => "Giménez",
+            'nacimiento' => "1996-08-12",
+            'posicion' => 4,
+            'nroCamiseta' => 9,
+            'piernaHabil' => 0,
+            'clubActual' => "Club Necaxa (MEX)",
+            'nombreClubImagen' => 'necaxa',
+            'nacionalidad' => "Argentina",
+            'altura' => "1,84",
+            'transferMarketLink' => 'https://www.transfermarkt.es/milton-gimenez/profil/spieler/730779',
+            'youTubeCodigo' => 'BBxo_kFGfgU',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+        DB::table('players')->insert([
+            'name' => "valentino_simoni",
+            'nombre' => "Valentino",
+            'apellido' => "Simoni",
+            'nacimiento' => "2004-04-30",
+            'posicion' => 4,
+            'nroCamiseta' => 9,
+            'piernaHabil' => 0,
+            'clubActual' => "CA Boca Juniors (ARG)",
+            'nombreClubImagen' => 'boca',
+            'nacionalidad' => "Argentina",
+            'altura' => "1,84",
+            'transferMarketLink' => 'https://www.transfermarkt.es',
+            'youTubeCodigo' => null,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+        DB::table('players')->insert([
             'name' => "daniel_villalva",
             'nombre' => "Daniel",
             'apellido' => "Villalva",
@@ -473,6 +453,40 @@ class PlayersSeeder extends Seeder
             'altura' => "1,58",
             'transferMarketLink' => 'https://www.transfermarkt.es/daniel-villalva/profil/spieler/85371',
             'youTubeCodigo' => '0Df0rZEvZOc',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+        DB::table('players')->insert([
+            'name' => "leonardo_ramos",
+            'nombre' => "Leonardo",
+            'apellido' => "Ramos",
+            'nacimiento' => "1989-08-21",
+            'posicion' => 4,
+            'nroCamiseta' => 33,
+            'piernaHabil' => 0,
+            'clubActual' => "Unión de Santa Fé (ARG)",
+            'nombreClubImagen' => 'union',
+            'nacionalidad' => "Argentina",
+            'altura' => "1,86",
+            'transferMarketLink' => 'https://www.transfermarkt.es/leonardo-ramos/profil/spieler/341298',
+            'youTubeCodigo' => 'jXeSjzzAerw',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+        DB::table('players')->insert([
+            'name' => "juan_cruz_avaca",
+            'nombre' => "Juan Cruz",
+            'apellido' => "Avaca",
+            'nacimiento' => "2006-01-23",
+            'posicion' => 4,
+            'nroCamiseta' => 10,
+            'piernaHabil' => 1,
+            'clubActual' => "CA San Lorenzo (ARG)",
+            'nombreClubImagen' => 'san_lorenzo',
+            'nacionalidad' => "Argentina",
+            'altura' => "1,79",
+            'transferMarketLink' => 'https://www.transfermarkt.es',
+            'youTubeCodigo' => null,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);

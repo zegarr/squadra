@@ -57,7 +57,7 @@
                     <li><a
                             href="{{ route('marketingDeportivo', app()->getLocale()) }}">{{ __('Marketing Deportivo') }}</a>
                     </li>
-                    <li><a href="{{ route('contacto', app()->getLocale()) }}">{{ __('Contacto') }}</a></li>
+                    <li><a href="{{ route('nosotros', app()->getLocale()) }}">{{ __('Quienes Somos') }}</a></li>
                     <li><a href="{{ route('home', 'es') }}"><img
                                 src='{{ asset('assets/img/flags/es.png') }}'
                                 style="width:30px;border-radius:15px;"></a>

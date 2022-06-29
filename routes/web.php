@@ -52,7 +52,7 @@ Route::group(["prefix" => "{idioma}"], function () {
         return view('marketingDeportivo', compact("marketingPosts"));
     })->name("marketingDeportivo");
 
-    Route::get('/contacto', function () {
-        return view('contacto');
-    })->name("contacto");
+    Route::get('/nosotros', function () {
+        return view('nosotros');
+    })->name("nosotros");
 });

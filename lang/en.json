@@ -3,7 +3,7 @@
     "Español":"Spanish",
     "Idioma":"Language",
 
-    "Contacto":"Contact",
+    "Quienes Somos":"About Us",
     "Servicios":"Services",
     "Inicio":"Home",
     "Management Deportivo":"Sports Management",
@@ -48,6 +48,7 @@
     "Desarrolado por" : "Developed by",
     "texto_footer": "Sports Management and Marketing company with more than :year years of experience in the market.",
 
-    "Dejanos tu consulta, te responderemos a la brevedad.": "Leave us your inquiry, We will respond shortly."
+    "Dejanos tu consulta, te responderemos a la brevedad.": "Leave us your inquiry, We will respond shortly.",
+    "texto_quienes_somos": "In 2001 our history begins, being the first sports management and marketing company in Argentina, organizing the tribute match to Diego Armando Maradona, together with the representation of youth players at that time. Today, 21 years later, we continue with the same passion to grow and be able to help the player in the development of his professional career."
 
 }
