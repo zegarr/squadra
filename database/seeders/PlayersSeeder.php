@@ -124,6 +124,25 @@ class PlayersSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
+        
+        DB::table('players')->insert([
+            'name' => "lautaro_di_lollo",
+            'nombre' => "Lautaro",
+            'apellido' => "di Lollo",
+            'nacimiento' => "2004-10-03",
+            'posicion' => 2,
+            'nroCamiseta' => 2,
+            'piernaHabil' => 0,
+            'clubActual' => "CA Boca Juniors (ARG)",
+            'nombreClubImagen' => 'boca',
+            'nacionalidad' => "Argentina",
+            'altura' => "1,89",
+            'transferMarketLink' => 'https://www.transfermarkt.co/lautaro-di-lollo/profil/spieler/1019744',
+            'youTubeCodigo' => null,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
         DB::table('players')->insert([
             'name' => "mariano_bittolo",
             'nombre' => "Mariano",
@@ -228,19 +247,20 @@ class PlayersSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
+        
         DB::table('players')->insert([
-            'name' => "lautaro_di_lollo",
-            'nombre' => "Lautaro",
+            'name' => "joaquin_di_lollo",
+            'nombre' => "Joaquín",
             'apellido' => "di Lollo",
-            'nacimiento' => "2004-10-03",
+            'nacimiento' => "2002-02-21",
             'posicion' => 2,
             'nroCamiseta' => 2,
             'piernaHabil' => 0,
             'clubActual' => "CA Boca Juniors (ARG)",
             'nombreClubImagen' => 'boca',
             'nacionalidad' => "Argentina",
-            'altura' => "1,89",
-            'transferMarketLink' => 'https://www.transfermarkt.co/lautaro-di-lollo/profil/spieler/1019744',
+            'altura' => "1,74",
+            'transferMarketLink' => "https://www.transfermarkt.es",
             'youTubeCodigo' => null,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
