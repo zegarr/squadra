@@ -1927,10 +1927,11 @@ section {
 
 #videoBack {
   position: fixed;
-  height: 100vh;
+  height: calc(100% - 70px);
+  margin-top: 70px;
   width: 100vw;
   object-fit: cover;
-  background-image: url("../img/home.png");
+  background-image: url("../img/home_image.png");
   opacity: 25%;
   background-size: contain;
 }

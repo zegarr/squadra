@@ -46,7 +46,7 @@
                     </div>
                     <div class="col-lg-7 col-md-12 col-sm-1 pt-lg-0 pt-5">
                         <iframe style="border-radius: 20px;" width="100%" height="300px"
-                            src="https://www.youtube.com/embed/{{ $jugador->youTubeCodigo }}"
+                            src="{{ $jugador->youTubeCodigo }}"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
