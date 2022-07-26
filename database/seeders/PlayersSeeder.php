@@ -65,7 +65,7 @@ class PlayersSeeder extends Seeder
             'nacionalidad' => "Argentina",
             'altura' => "1,84",
             'transferMarketLink' => 'https://www.transfermarkt.es/federico-losas/profil/spieler/661127',
-            'youTubeCodigo' => 'https://www.youtube.com/embed/JZSgiuzQ9_M',
+            'youTubeCodigo' => 'https://www.youtube.com/embed/AyxDFxU1368',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -156,7 +156,7 @@ class PlayersSeeder extends Seeder
             'nacionalidad' => "Argentina",
             'altura' => "1,75",
             'transferMarketLink' => 'https://www.transfermarkt.es/mariano-bittolo/profil/spieler/105842',
-            'youTubeCodigo' => 'https://www.youtube.com/embed/9yP0ypLz7eE',
+            'youTubeCodigo' => 'https://www.youtube.com/embed/4OKCB_t36cc',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -298,7 +298,7 @@ class PlayersSeeder extends Seeder
             'nacionalidad' => "Argentina",
             'altura' => "1,75",
             'transferMarketLink' => 'https://www.transfermarkt.es/sebastian-jaurena/profil/spieler/727892',
-            'youTubeCodigo' => 'https://www.youtube.com/embed/4MR-jwtR6gc',
+            'youTubeCodigo' => 'https://www.youtube.com/embed/TIp6LzvhlhA',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -404,7 +404,7 @@ class PlayersSeeder extends Seeder
             'nacionalidad' => "Argentina",
             'altura' => "1,84",
             'transferMarketLink' => 'https://www.transfermarkt.es/milton-gimenez/profil/spieler/730779',
-            'youTubeCodigo' => 'https://www.youtube.com/embed/BBxo_kFGfgU',
+            'youTubeCodigo' => 'https://www.youtube.com/embed/Qepxt481S3U',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -438,7 +438,7 @@ class PlayersSeeder extends Seeder
             'nacionalidad' => "Argentina",
             'altura' => "1,84",
             'transferMarketLink' => 'https://www.transfermarkt.es/gaston-veron/profil/spieler/564001',
-            'youTubeCodigo' => 'https://www.youtube.com/embed/8W2jlu9T8rM',
+            'youTubeCodigo' => 'https://www.youtube.com/embed/DrSM8h4B7DE',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
