@@ -192,7 +192,7 @@ class PlayersSeeder extends Seeder
             'nacionalidad' => "Argentina",
             'altura' => "1,79",
             'transferMarketLink' => 'https://www.transfermarkt.es',
-            'youTubeCodigo' => null,
+            'youTubeCodigo' => 'https://www.youtube.com/embed/AP120YWvoCs',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -489,7 +489,7 @@ class PlayersSeeder extends Seeder
             'nacionalidad' => "Argentina",
             'altura' => "1,86",
             'transferMarketLink' => 'https://www.transfermarkt.es/leonardo-ramos/profil/spieler/341298',
-            'youTubeCodigo' => 'https://www.youtube.com/embed/jXeSjzzAerw',
+            'youTubeCodigo' => 'https://www.youtube.com/embed/LQJ21jSuzz0',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
